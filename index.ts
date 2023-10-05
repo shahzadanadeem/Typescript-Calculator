@@ -4,6 +4,7 @@
 	Batch 47
 	Roll No.	PIAIC210428
 	Name:		  Shahzada Nadeem
+  Project   Calculator
 */
 
 import inquirer from "inquirer";
