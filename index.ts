@@ -74,4 +74,4 @@ async function start() {
   } while (again.restart == "Y" || again.restart == "y" );
 }
 
-await start()
+await start();
