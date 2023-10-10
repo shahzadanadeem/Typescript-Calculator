@@ -1,4 +1,10 @@
 #! /usr/bin/env node
+/*
+    Batch 47
+    Roll No.	PIAIC210428
+    Name:		  Shahzada Nadeem
+  Project   Calculator
+*/
 import inquirer from "inquirer";
 import chalk from "chalk";
 import chalkAnimation from "chalk-animation";
@@ -17,7 +23,7 @@ async function calculator() {
         {
             type: "list",
             name: "operators",
-            message: chalk.blue.bgGreen.bold("Please Select Operation \n"),
+            message: chalk.blue.bgGreen.bold("Please Select Options\n"),
             choices: ["+ Addition", "- Subtractions", "x Multiplications", "/ Division"],
         },
         {
@@ -33,7 +39,7 @@ async function calculator() {
     ]);
     if (answers.operators == "+ Addition") {
         const result = answers.num1 + answers.num2;
-        console.log(chalk.greenBright(` ${answers.num1}+${answers.num2} = ${result}`));
+        console.log(chalk.greenBright(` ${answers.num1} + ${answers.num2} = ${result}`));
     }
     else if (answers.operators == "- Subtractions") {
         const result = answers.num1 - answers.num2;
